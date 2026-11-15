@@ -1,3 +1,4 @@
+// WAP to find a summation of a digit of a given number. (recursive) 
 #include <stdio.h>
 int sumOfDigits(int n){
     return n%10 + sumOfDigits(n/10);

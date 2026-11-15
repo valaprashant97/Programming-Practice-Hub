@@ -1,3 +1,4 @@
+// WAP to find a factorial of a given integer using recursive 
 #include <stdio.h>
 int fact(int n){
     if(n == 0 || n == 1){

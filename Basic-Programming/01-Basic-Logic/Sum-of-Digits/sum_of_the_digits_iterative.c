@@ -1,3 +1,4 @@
+// WAP to find a summation of a digit of a given number. (Iterative) 
 #include <stdio.h>
 void main()
 {

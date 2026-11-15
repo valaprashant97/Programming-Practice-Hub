@@ -1,3 +1,4 @@
+// WAP to find a factorial of a given integer using iterative 
 #include <stdio.h>
 void main()
 {
