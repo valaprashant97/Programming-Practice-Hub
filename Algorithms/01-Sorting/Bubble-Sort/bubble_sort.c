@@ -4,9 +4,10 @@
 
 void bubbleSort(int arr[], int size)
 {
-    for (int i = 0; i < size - 1; i++)
+
+    for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < size - i - 1; j++)
+        for (int j = 0; j < size - 1; j++)
         {
             if (arr[j] > arr[j + 1])
             {
@@ -23,9 +24,7 @@ int main()
     int size;
 
     printf("Enter a size of Array: ");
-    scanf("%d", &size);
-
-    if (size <= 0)
+    if (scanf("%d", &size) != 1 || size <= 0)
     {
         printf("Invalid array size!");
         return 1;
@@ -42,12 +41,19 @@ int main()
     for (int i = 0; i < size; i++)
     {
         printf("Enter a Number %d: ", i + 1);
-        scanf("%d", &arr[i]);
+
+        if (scanf("%d", &arr[i]) != 1)
+        {
+            printf("Invalid input!");
+            free(arr);
+            return 1;
+        }
     }
 
     bubbleSort(arr, size);
 
     printf("Sorted Array: ");
+
     for (int i = 0; i < size; i++)
     {
         printf("%d ", arr[i]);
