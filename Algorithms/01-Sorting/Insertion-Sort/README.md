@@ -16,17 +16,19 @@ Insertion Sort is a simple sorting algorithm that builds a sorted array one elem
 
 ## Example
 
-**Input:** `5, 3, 8, 2, 1`
+## Array : `[5, 3, 8, 2, 1]`
 
-**Pass 1:** `3, 5, 8, 2, 1`
+## Summary Table
 
-**Pass 2:** `3, 5, 8, 2, 1`
+| Pass | Key | Sorted Array | Unsorted Array |
+|---|---|---|---|
+| Initial | — | `[5]` | `[3, 8, 2, 1]` |
+| 1 | 3 | `[3, 5]` | `[8, 2, 1]` |
+| 2 | 8 | `[3, 5, 8]` | `[2, 1]` |
+| 3 | 2 | `[2, 3, 5, 8]` | `[1]` |
+| 4 | 1 | `[1, 2, 3, 5, 8]` | `[]` |
 
-**Pass 3:** `2, 3, 5, 8, 1`
-
-**Pass 4:** `1, 2, 3, 5, 8`
-
-**Output:** `1, 2, 3, 5, 8`
+## Final Sorted Array : `[1, 2, 3, 5, 8]`
 
 ## Advantages
 - Easy to understand and implement.
